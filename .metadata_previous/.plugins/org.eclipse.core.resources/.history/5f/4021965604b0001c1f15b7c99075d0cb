@@ -1,0 +1,43 @@
+package com.paynet.test;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+
+public class LoginTest {
+	WebDriver driver;
+	
+	@BeforeMethod
+	public void setup() {
+		System.out.println("Launch Browser");
+		driver=new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.get("https://opensource-demo.orangehrmlive.com/");
+	}
+	
+	@AfterMethod
+	public void teardown() {
+		System.out.println("Close Browser");
+		driver.quit();
+	}
+	
+	@Test
+	public void validCredentialTest() {
+		System.out.println("valid test");
+		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+        driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+        driver.findElement(By.name("Submit")).click();
+	}
+	
+	@Test
+	public void invalidCredentialTest() {
+		System.out.println("valid test");
+	}
+	
+}

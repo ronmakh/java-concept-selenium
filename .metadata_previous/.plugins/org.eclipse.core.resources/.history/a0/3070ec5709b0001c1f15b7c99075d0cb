@@ -1,0 +1,27 @@
+package com.paynet.test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import com.paynet.base.WebDriverWrapper;
+
+
+public class LoginTest extends WebDriverWrapper{
+
+	
+	@Test
+	public void validCredentialTest() {
+		System.out.println("valid test");
+		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+        driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+        driver.findElement(By.name("Submit")).click();
+        
+        //validation
+        Assert.assertEquals(driver.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/index.php/dashboard");
+	}
+	
+	@Test
+	public void invalidCredentialTest() {
+		System.out.println("valid test");
+	}
+	
+}

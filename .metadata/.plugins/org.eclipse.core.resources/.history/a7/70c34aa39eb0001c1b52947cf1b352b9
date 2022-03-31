@@ -1,0 +1,20 @@
+package com.paynet.test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class DemoTest1 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileInputStream file=new FileInputStream("testdata/TestData.xlsx");
+		
+		XSSFWorkbook book=new XSSFWorkbook(file);
+		
+		XSSFSheet sheet=book.getSheet("invalidCredentialTest");
+		
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package com.paynet.test;
+
+import org.testng.annotations.Test;
+
+public class LoginTest {
+	
+	@Test
+	public void validCredentialTest(priority = 1) {
+		System.out.println("valid test");
+	}
+	
+	@Test
+	public void invalidCredentialTest() {
+		System.out.println("valid test");
+	}
+	
+}

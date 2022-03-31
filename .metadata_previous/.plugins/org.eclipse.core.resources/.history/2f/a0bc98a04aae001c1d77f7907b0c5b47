@@ -1,0 +1,16 @@
+package com.paynet.datatypes;
+
+public class DatatypesDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte a=100;
+		short b=100;
+		int c=100;
+		
+		System.out.print(a);
+		System.out.print(b);
+		System.out.print(c);
+	}
+
+}

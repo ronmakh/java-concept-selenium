@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11137" started-at="2022-03-31T15:02:53 SGT" finished-at="2022-03-31T15:03:04 SGT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11137" started-at="2022-03-31T15:02:53 SGT" finished-at="2022-03-31T15:03:04 SGT">
+      <class name="com.paynet.test.LoginUITest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.paynet.test.LoginUITest@38bc8ab5]" name="setup" is-config="true" duration-ms="9704" started-at="2022-03-31T15:02:53 SGT" finished-at="2022-03-31T15:03:02 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateTitleTest()[pri:0, instance:com.paynet.test.LoginUITest@38bc8ab5]" name="validateTitleTest" duration-ms="92" started-at="2022-03-31T15:03:02 SGT" finished-at="2022-03-31T15:03:02 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.paynet.test.LoginUITest@38bc8ab5]" name="teardown" is-config="true" duration-ms="1276" started-at="2022-03-31T15:03:02 SGT" finished-at="2022-03-31T15:03:04 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.paynet.test.LoginUITest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

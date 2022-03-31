@@ -1,0 +1,22 @@
+package com.paynet.utilities;
+
+import org.testng.annotations.DataProvider;
+
+public class DataUtils {
+
+	@DataProvider
+	public String[][] invalidCredentialData()
+	{
+		String[][] main=new String [2][3];
+		
+		main[0][0]="John";
+		main[0][1]="John123";
+		main[0][2]="Invalid credentials";
+		
+		main[1][0]="Peter";
+		main[1][1]="Peter123";
+		main[1][2]="Invalid credentials";
+		
+		return main;
+	}
+}

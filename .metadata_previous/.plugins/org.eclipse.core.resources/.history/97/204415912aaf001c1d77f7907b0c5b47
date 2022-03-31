@@ -1,0 +1,10 @@
+package com.paynet.basic;
+
+public class Demo2FacebookLoginTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

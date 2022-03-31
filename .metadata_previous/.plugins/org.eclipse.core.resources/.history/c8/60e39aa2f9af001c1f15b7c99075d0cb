@@ -1,0 +1,10 @@
+package com.paynet.test;
+
+public class LoginTest {
+	
+	@Test
+	public void validCredentialTest() {
+		System.out.println("valid test");
+	}
+	
+}
